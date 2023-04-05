@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/calculator.css">
+</head>
+<body>
+    <header>
+        <h1>Menghitung Luas dan Keliling Segitiga</h1>
+        <div class="menu">
+            <a href="#wide">Luas Segitiga</a>
+            <a href="#area">Keliling Segitiga</a>
+        </div>
+    </header>
+    <main>
+        <!-- Luas Segitiga -->
+        <section id="wide">
+            <form action="" onsubmit="submittriangeWide(event)">
+                <div class="card">
+                    <div class="card-header">
+                        Luas Segitiga
+                    </div>
+                    <div class="card-body">
+                        <img src="assets/luassegitiga.png" alt="">
+                        <p>Rumus Luas Segitiga :</p>
+                        <p class="formula">L = 1/2 x a x t</p>
+                        <p>
+                            L = Luas <br>
+                            a = Panjang Alas <br>
+                            t = Tinggi
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="card-calculate">
+                        <h3>Hitung Luas Segitiga</h3>
+                            <div class="form-hitung">
+                                <input type="number" name="" id="pad" pattern="[0-9]+" placeholder="Nilai Alas" required>
+                                <input type="number" name="" id="height" pattern="[0-9]+" placeholder="Nilai Tinggi" required>
+                                <div id="formula-wide"></div>
+                                <div id="calculate-wide"></div>
+                                <div id="result-wide"></div>
+                                <button type="submit">Hitung</button>
+                                <button type="reset" onclick="resettriangleWide()">Reset</button>
+                            </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <!-- Keliling Segitiga -->
+        <section id="area">
+            <form action="" onsubmit="submittriangleArea(event)">
+                <div class="card">
+                    <div class="card-header">
+                        Keliling Segitiga
+                    </div>
+                    <div class="card-body">
+                        <img src="assets/kelilingsegitiga.jpg" alt="">
+                        <p>Rumus Keliling Segitiga :</p>
+                        <p class="formula">K = S1 + S2 + S3</p>
+                        <p>
+                            K = Keliling <br>
+                            S1 = Sisi 1 <br>
+                            S2 = Sisi 2 <br>
+                            S3 = Sisi 3s <br>
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="card-calculate">
+                        <h3>Hitung Keliling Segitiga</h3>
+                        <div class="form-hitung">
+                            <input type="text" name="" id="side1" pattern="[0-9]+" placeholder="Nilai Sisi 1" required>
+                            <input type="text" name="" id="side2" pattern="[0-9]+" placeholder="Nilai Sisi 2" required>
+                            <input type="text" name="" id="side3" pattern="[0-9]+" placeholder="Nilai Sisi 3" required>
+                            <div id="formula-area"></div>
+                            <div id="calculate-area"></div>
+                            <div id="result-area"></div>
+                            <button type="submit">Hitung</button>
+                            <button type="reset" onclick="resettriangleArea()">Reset</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="js/index.js"></script>
+</body>
+</html>

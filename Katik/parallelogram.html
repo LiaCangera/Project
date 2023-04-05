@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/calculator.css">
+</head>
+<body>
+    <header>
+        <h1>Menghitung Luas dan Keliling Jajargenjang</h1>
+        <div class="menu">
+            <a href="#wide">Luas Jajargenjang</a>
+            <a href="#area">Keliling Jajargenjang</a>
+        </div>
+    </header>
+    <main>
+        <section id="wide">
+            <form action="" onsubmit="submitparallelogramWide(event)">
+                <div class="card">
+                    <div class="card-header">
+                        Luas Jajargenjang
+                    </div>
+                    <div class="card-body">
+                        <img src="assets/jajargenjang.jpg" alt="">
+                        <p>Rumus Luas Jajargenjang :</p>
+                        <p class="formula">L = a x t</p>
+                        <p>
+                            L = Luas <br>
+                            a = Panjang Alas <br>
+                            t = Tinggi
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="card-calculate">
+                        <h3>Hitung Luas Jajargenjang</h3>
+                        <div class="form-hitung">
+                            <input type="number" name="" id="pad" pattern="[0-9]+" placeholder="Nilai Alas" required>
+                            <input type="number" name="" id="height" pattern="[0-9]+" placeholder="Nilai Tinggi" required>
+                            <div id="formula-wide"></div>
+                            <div id="calculate-wide"></div>
+                            <div id="result-wide"></div>
+                            <button type="submit">Hitung</button>
+                            <button type="reset" onclick="resetparallelogramWide()">Reset</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <!-- area -->
+        <section id="area">
+            <form action="" onsubmit="submitparallelogramArea(event)">
+                <div class="card">
+                    <div class="card-header">
+                        Keliling Jajargenjang
+                    </div>
+                    <div class="card-body">
+                        <img src="assets/jajargenjang.jpg" alt="">
+                        <p>Rumus Keliling Jajargenjang :</p>
+                        <p class="formula">K = 2 x (Sa + Sb) </p>
+                        <p>
+                            K = Keliling <br>
+                            Sa = Sisi A <br>
+                            Sb = Sisi B <br>
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="card-calculate">
+                        <h3>Hitung Keliling Jajargenjang</h3>
+                        <div class="form-hitung">
+                            <input type="number" name="" id="side1" pattern="[0-9]+" placeholder="Nilai Sisi A" required>
+                            <input type="number" name="" id="side2" pattern="[0-9]+" placeholder="Nilai Sisi B" required>
+                            <div id="formula-area"></div>
+                            <div id="calculate-area"></div>
+                            <div id="result-area"></div>
+                            <button type="submit">Hitung</button>
+                            <button type="reset" onclick="resetparallelogramArea()">Reset</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="js/index.js"></script>
+</body>
+</html>

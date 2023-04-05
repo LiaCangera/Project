@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.jumbotron{
+    border: 1px #FAEBD7 solid;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #FAEBD7;
+    margin: 50px;
+}
+
+h1{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.subtittle{
+    text-align: center;
+    font-size: 20px;
+}
+
+.menu{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+a:hover{
+    background-color: #1E90FF;
+    color: white;
+    border-radius: 5px;
+}
+
+a{
+    text-decoration: none;
+    padding: 10px;
+    margin: 0px 5px 0px 5px;
+    border-radius: 4px;
+    font-size: 18px;
+    color: black;
+}
+
+footer{
+    text-align: center;
+    font-size: 20px;
+    background-color: #FAEBD7;
+    font-weight: 500;
+    margin: 50px;
+    padding: 10px;
+}
